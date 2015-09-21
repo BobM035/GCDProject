@@ -26,9 +26,9 @@ The data contained in the *Inertial Signals* subdirectories was determined, for 
 All data files were read using the *read.table()* function.  The only parameter specified was: *stringsAsFactors=FALSE*
 
 The column name data was cleaned up by:
-1. Removing the column of numbers and leaving the column of text.
-2. Stripping out "(", ")", "-", and "," characters from the text.
-3. I chose not to change capitalization because it would have made the column headings too hard to read.
+- Removing the column of numbers and leaving the column of text.
+- Stripping out "(", ")", "-", and "," characters from the text.
+- I chose not to change capitalization because it would have made the column headings too hard to read.
 
 The column names were then applied to the "X" data frames using the *colnames()* function.
 
