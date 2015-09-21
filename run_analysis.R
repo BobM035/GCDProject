@@ -2,19 +2,18 @@
 library(data.table)
 library(dplyr)
 ## Read in data files
-Xtest<-read.table("test/X_test.txt")
-ytest<-read.table("test/y_test.txt")
-subtest<-read.table("test/subject_test.txt") 
-Xtrain<-read.table("train/X_train.txt") 
-ytrain<-read.table("train/y_train.txt") 
-subtrain<-read.table("train/subject_train.txt")
+Xtest<-read.table("test/X_test.txt", stringsAsFactors=FALSE)
+ytest<-read.table("test/y_test.txt", stringsAsFactors=FALSE)
+subtest<-read.table("test/subject_test.txt", stringsAsFactors=FALSE) 
+Xtrain<-read.table("train/X_train.txt", stringsAsFactors=FALSE) 
+ytrain<-read.table("train/y_train.txt", stringsAsFactors=FALSE) 
+subtrain<-read.table("train/subject_train.txt", stringsAsFactors=FALSE)
 ## Read in column names
 cols<-read.table("features.txt", stringsAsFactors=FALSE)
 cols<-cols[,2]
 ## Strip out special characters from column names
 cols<-gsub('\\(','',cols)
 cols<-gsub('\\)','',cols)
-cols<-gsub('\\,','',cols)
 cols<-gsub('-','',cols)
 cols<-gsub('\\,','',cols)
 ## Alternate method not implemented
