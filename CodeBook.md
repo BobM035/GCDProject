@@ -32,7 +32,7 @@ The column name data was cleaned up by:
 
 The column names were then applied to the "X" data frames using the *colnames()* function.
 
-The subject and activity data frames were modified to add a column header of subject and activity.
+The subject and activity data frames were modified to add a column header of 'subject' and 'activity'.
 
 Next, the *cbind()* function was used to add the subject and columns to the left side of the "X" data frames. Then the *rbind()* function was used to join the test and train data frames into one combined data frame.
 
